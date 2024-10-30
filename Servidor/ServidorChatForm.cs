@@ -145,9 +145,9 @@ namespace Servidor
                 {
                     throw new Exception("No se pudo encontrar una dirección IP válida.");
                 }
-                oyente = new TcpListener(IPAddress.Any, 50000); 
+                oyente = new TcpListener(IPAddress.Parse(ip), 50000); 
                 oyente.Start();
-                string ip_coneted = $"Servidor escuchando en {IPAddress.Any.ToString()}:50000\r\n";
+                string ip_coneted = $"Servidor escuchando en {ip.ToString()}\r\n";
                 MostrarIPServidor(ip_coneted); // Actualiza el Label con la IP
                 while (true)
                 {

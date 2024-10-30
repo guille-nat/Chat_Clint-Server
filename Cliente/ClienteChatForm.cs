@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Cliente
 {
@@ -97,11 +98,16 @@ namespace Cliente
             System.Diagnostics.Debug.WriteLine("Entre: entradaTextBox_KeyDown CLIENTE");
             try
             {
+                string? username = textNombreUsuario.Text;
+                if (username == "" || username == null)
+                {
+                    username = "CLIENTE";
+                }
                 if (e.KeyCode == Keys.Enter && entradaTextBox.ReadOnly == false)
                 {
 
-                    escritor.Write("CLIENTE>>> " + entradaTextBox.Text);
-                    mostrarTextBox.AppendText("CLIENTE>>>" + entradaTextBox.Text + Environment.NewLine);
+                    escritor.Write($"{username}>>> " + entradaTextBox.Text);
+                    mostrarTextBox.AppendText($"{username}>>>" + entradaTextBox.Text + Environment.NewLine);
                     entradaTextBox.Clear();
                 }
             }
@@ -114,11 +120,16 @@ namespace Cliente
         {
             try
             {
+                string? username = textNombreUsuario.Text;
+                if (username == "" || username == null)
+                {
+                    username = "CLIENTE";
+                }
                 if (entradaTextBox.ReadOnly == false)
                 {
 
-                    escritor.Write("CLIENTE>>> " + entradaTextBox.Text);
-                    mostrarTextBox.AppendText("CLIENTE>>>" + entradaTextBox.Text + Environment.NewLine);
+                    escritor.Write($"{username}>>> " + entradaTextBox.Text);
+                    mostrarTextBox.AppendText($"{username}>>>" + entradaTextBox.Text + Environment.NewLine);
                     entradaTextBox.Clear();
                 }
             }
