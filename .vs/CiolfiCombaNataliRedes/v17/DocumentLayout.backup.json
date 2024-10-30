@@ -1,25 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\",
+  "WorkspaceRootPath": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C15F847A-9C7D-4AE6-A9F3-77AACC3987D6}|Cliente\\Cliente.csproj|c:\\users\\maria\\onedrive\\guille\\escritorio\\redes_program\\ciolficombanataliclienteservidor\\cliente\\clientechatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C15F847A-9C7D-4AE6-A9F3-77AACC3987D6}|Cliente\\Cliente.csproj|solutionrelative:cliente\\clientechatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C15F847A-9C7D-4AE6-A9F3-77AACC3987D6}|Cliente\\Cliente.csproj|c:\\users\\maria\\onedrive\\guille\\escritorio\\redes_program\\ciolficombanataliclienteservidor\\cliente\\clientechatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C15F847A-9C7D-4AE6-A9F3-77AACC3987D6}|Cliente\\Cliente.csproj|solutionrelative:cliente\\clientechatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FE614F2-DD71-4F4D-A9D5-56D601C9F2CE}|Servidor\\Servidor.csproj|c:\\users\\maria\\onedrive\\guille\\escritorio\\redes_program\\ciolficombanataliclienteservidor\\servidor\\servidorchatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FE614F2-DD71-4F4D-A9D5-56D601C9F2CE}|Servidor\\Servidor.csproj|c:\\users\\maria\\onedrive\\guille\\escritorio\\redes_program\\tp_redes_clint-server\\servidor\\servidorchatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FE614F2-DD71-4F4D-A9D5-56D601C9F2CE}|Servidor\\Servidor.csproj|solutionrelative:servidor\\servidorchatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C15F847A-9C7D-4AE6-A9F3-77AACC3987D6}|Cliente\\Cliente.csproj|c:\\users\\maria\\onedrive\\guille\\escritorio\\redes_program\\ciolficombanataliclienteservidor\\cliente\\clientechatform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C15F847A-9C7D-4AE6-A9F3-77AACC3987D6}|Cliente\\Cliente.csproj|solutionrelative:cliente\\clientechatform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C15F847A-9C7D-4AE6-A9F3-77AACC3987D6}|Cliente\\Cliente.csproj|c:\\users\\maria\\onedrive\\guille\\escritorio\\redes_program\\tp_redes_clint-server\\cliente\\clientechatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C15F847A-9C7D-4AE6-A9F3-77AACC3987D6}|Cliente\\Cliente.csproj|solutionrelative:cliente\\clientechatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5FE614F2-DD71-4F4D-A9D5-56D601C9F2CE}|Servidor\\Servidor.csproj|c:\\users\\maria\\onedrive\\guille\\escritorio\\redes_program\\ciolficombanataliclienteservidor\\servidor\\servidorchatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C15F847A-9C7D-4AE6-A9F3-77AACC3987D6}|Cliente\\Cliente.csproj|c:\\users\\maria\\onedrive\\guille\\escritorio\\redes_program\\tp_redes_clint-server\\cliente\\clientechatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C15F847A-9C7D-4AE6-A9F3-77AACC3987D6}|Cliente\\Cliente.csproj|solutionrelative:cliente\\clientechatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5FE614F2-DD71-4F4D-A9D5-56D601C9F2CE}|Servidor\\Servidor.csproj|C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\servidor\\servidorchatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5FE614F2-DD71-4F4D-A9D5-56D601C9F2CE}|Servidor\\Servidor.csproj|solutionrelative:servidor\\servidorchatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -29,31 +25,18 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 197,
-          "SelectedChildIndex": 2,
+          "DockedWidth": 229,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ClienteChatForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\Cliente\\ClienteChatForm.Designer.cs",
-              "RelativeDocumentMoniker": "Cliente\\ClienteChatForm.Designer.cs",
-              "ToolTip": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\Cliente\\ClienteChatForm.Designer.cs",
-              "RelativeToolTip": "Cliente\\ClienteChatForm.Designer.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAASwGkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T13:18:34.029Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ServidorChatForm.cs",
-              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\Servidor\\ServidorChatForm.cs",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Servidor\\ServidorChatForm.cs",
               "RelativeDocumentMoniker": "Servidor\\ServidorChatForm.cs",
-              "ToolTip": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\Servidor\\ServidorChatForm.cs",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Servidor\\ServidorChatForm.cs",
               "RelativeToolTip": "Servidor\\ServidorChatForm.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAABdAAAAAAAAAA==",
+              "ViewState": "AgIAAIIAAAAAAAAAAIA8wJYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T12:49:58.005Z",
               "EditorCaption": ""
@@ -62,11 +45,11 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ClienteChatForm.cs",
-              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\Cliente\\ClienteChatForm.cs",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Cliente\\ClienteChatForm.cs",
               "RelativeDocumentMoniker": "Cliente\\ClienteChatForm.cs",
-              "ToolTip": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\Cliente\\ClienteChatForm.cs",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Cliente\\ClienteChatForm.cs",
               "RelativeToolTip": "Cliente\\ClienteChatForm.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAA0wCYAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAQwLoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T13:10:39.512Z",
               "EditorCaption": ""
@@ -74,16 +57,16 @@
           ]
         },
         {
-          "DockedWidth": 197,
+          "DockedWidth": 165,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ClienteChatForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\Cliente\\ClienteChatForm.cs",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Cliente\\ClienteChatForm.cs",
               "RelativeDocumentMoniker": "Cliente\\ClienteChatForm.cs",
-              "ToolTip": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\Cliente\\ClienteChatForm.cs [Design]",
+              "ToolTip": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Cliente\\ClienteChatForm.cs [Design]",
               "RelativeToolTip": "Cliente\\ClienteChatForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-30T13:07:11.764Z",
@@ -91,15 +74,14 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ServidorChatForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\Servidor\\ServidorChatForm.cs",
+              "DocumentMoniker": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Servidor\\ServidorChatForm.cs",
               "RelativeDocumentMoniker": "Servidor\\ServidorChatForm.cs",
               "ToolTip": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\CiolfiCombaNataliClienteServidor\\Servidor\\ServidorChatForm.cs [Design]",
-              "RelativeToolTip": "Servidor\\ServidorChatForm.cs [Design]",
+              "RelativeToolTip": "..\\CiolfiCombaNataliClienteServidor\\Servidor\\ServidorChatForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-30T12:51:20.427Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-30T12:51:20.427Z"
             }
           ]
         }
