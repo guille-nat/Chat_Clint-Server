@@ -65,6 +65,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = System.Drawing.SystemColors.Control;
             label1.Location = new System.Drawing.Point(14, 136);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(64, 15);
@@ -92,6 +93,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             ClientSize = new System.Drawing.Size(824, 513);
             Controls.Add(btnConectar);
             Controls.Add(ipTextBox);

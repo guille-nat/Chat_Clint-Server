@@ -19,6 +19,10 @@ namespace Servidor
         public ServidorChatForm()
         {
             InitializeComponent();
+            // Establece la posición de la ventana del servidor a la derecha de la pantalla
+            this.StartPosition = FormStartPosition.Manual;
+            // A la derecha
+            this.Location = new Point(Screen.PrimaryScreen.WorkingArea.Width - this.Width - 200, 100);
         }
 
         private Socket? conexion;
@@ -29,8 +33,8 @@ namespace Servidor
 
         private void ServidorChatForm_load(object sender, EventArgs e)
         {
-            string ip = "127.0.0.1";
-            lecturaThread = new Thread(() => EjecutarServidor(ip));
+            
+            lecturaThread = new Thread( EjecutarServidor);
             lecturaThread.Start();
         }
 
@@ -111,29 +115,31 @@ namespace Servidor
                 mostrarTextBox.Text += "\nError al escribir objeto";
             }
         }
-        private void btnConectar_Click(object sender, EventArgs e)
+        private void MostrarIPServidor(string ip)
         {
-            string ip = ipTextBox.Text; // obtener la IP del usuario.
-            if (string.IsNullOrWhiteSpace(ip))
+            // Verifica si es necesario invocar el método en el hilo principal
+            if (labelIPDir.InvokeRequired) 
             {
-                MessageBox.Show("Por favor, ingrese una dirección IP válida.", "IP inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                labelIPDir.Invoke(new Action<string>(MostrarIPServidor), ip);
             }
-
-            // Iniciar el servidor y se conceta al cliente.
-            lecturaThread = new Thread(() => EjecutarServidor(ip));
-            lecturaThread.Start();
+            else
+            {
+                // Actualiza el texto del Label
+                labelIPDir.Text = ip; 
+            }
         }
-
-        public void EjecutarServidor(string ip)
+        public void EjecutarServidor()
         {
             TcpListener oyente;
             int contador = 1;
 
             try
             {
-                // Converte IP (string) a IPAddress
-                oyente = new TcpListener(IPAddress.Parse(ip), 50000); 
+                // Escuchar en todas las direcciones IP de la máquina
+                oyente = new TcpListener(IPAddress.Any, 50000); 
                 oyente.Start();
+                string ip = $"Servidor escuchando en {IPAddress.Any.ToString()}:50000\r\n";
+                MostrarIPServidor(ip); // Actualiza el Label con la IP
                 while (true)
                 {
                     MostrarMensaje("Esperando una conexión\r\n");

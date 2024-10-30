@@ -25,6 +25,10 @@ namespace Cliente
         {
             System.Diagnostics.Debug.WriteLine("Entre: Constructor");
             InitializeComponent();
+            // Establece la posición de la ventana del cliente a la izquierda de la pantalla
+            this.StartPosition = FormStartPosition.Manual;
+            // A la izquierda
+            this.Location = new Point(200, 100); 
         }
 
         // Inicializa el subproceso para lectura
@@ -32,11 +36,20 @@ namespace Cliente
         private void ClienteChatForm_Load(object sender, EventArgs e)
         {
             System.Diagnostics.Debug.WriteLine("Entre: OnLoad");
-            string ip = "127.0.0.1";
+            
+        }
+        private void btnConectar_Click(object sender, EventArgs e)
+        {
+            string ip = ipTextBox.Text; // obtener la IP del usuario.
+            if (string.IsNullOrWhiteSpace(ip))
+            {
+                MessageBox.Show("Por favor, ingrese una dirección IP válida.", "IP inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            // Iniciar el cliente y se conceta al servidor.
             lecturaThread = new Thread(() => EjecutarCliente(ip));
             lecturaThread.Start();
         }
-
         // Cierra todos los subprocesos asociados con esta aplicación
         private void ClienteChatForm_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -74,18 +87,7 @@ namespace Cliente
                 entradaTextBox.ReadOnly = valor;
             }
         }
-        private void btnConectar_Click(object sender, EventArgs e)
-        {
-            string ip = ipTextBox.Text; // obtener la IP del usuario.
-            if (string.IsNullOrWhiteSpace(ip))
-            {
-                MessageBox.Show("Por favor, ingrese una dirección IP válida.", "IP inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-
-            // Iniciar el cliente y se conceta al servidor.
-            lecturaThread = new Thread(() => EjecutarCliente(ip));
-            lecturaThread.Start();
-        }
+       
 
         // Envía al servidor el texto que escribe el usuario
         private void entradaTextBox_KeyDown(object sender, KeyEventArgs e)

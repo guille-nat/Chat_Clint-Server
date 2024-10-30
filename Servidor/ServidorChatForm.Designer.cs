@@ -34,8 +34,7 @@ namespace Servidor
             mostrarTextBox = new System.Windows.Forms.TextBox();
             btnEnviarServidor = new System.Windows.Forms.Button();
             label1 = new System.Windows.Forms.Label();
-            ipTextBox = new System.Windows.Forms.TextBox();
-            btnConectar = new System.Windows.Forms.Button();
+            labelIPDir = new System.Windows.Forms.Label();
             SuspendLayout();
             // 
             // entradaTextbox
@@ -48,9 +47,11 @@ namespace Servidor
             // 
             // mostrarTextBox
             // 
+            mostrarTextBox.BackColor = System.Drawing.Color.LightGray;
             mostrarTextBox.Location = new System.Drawing.Point(12, 162);
             mostrarTextBox.Multiline = true;
             mostrarTextBox.Name = "mostrarTextBox";
+            mostrarTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             mostrarTextBox.Size = new System.Drawing.Size(798, 339);
             mostrarTextBox.TabIndex = 1;
             // 
@@ -67,40 +68,35 @@ namespace Servidor
             // label1
             // 
             label1.AutoSize = true;
+            label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             label1.Location = new System.Drawing.Point(14, 136);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(64, 15);
             label1.TabIndex = 3;
             label1.Text = "Mnsaje >>";
             // 
-            // ipTextBox
+            // labelIPDir
             // 
-            ipTextBox.Location = new System.Drawing.Point(325, 55);
-            ipTextBox.Name = "ipTextBox";
-            ipTextBox.Size = new System.Drawing.Size(100, 23);
-            ipTextBox.TabIndex = 4;
-            // 
-            // btnConectar
-            // 
-            btnConectar.Location = new System.Drawing.Point(431, 55);
-            btnConectar.Name = "btnConectar";
-            btnConectar.Size = new System.Drawing.Size(75, 23);
-            btnConectar.TabIndex = 5;
-            btnConectar.Text = "Conectar";
-            btnConectar.UseVisualStyleBackColor = true;
-            btnConectar.Click += btnConectar_Click;
+            labelIPDir.AutoSize = true;
+            labelIPDir.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            labelIPDir.ForeColor = System.Drawing.SystemColors.Window;
+            labelIPDir.Location = new System.Drawing.Point(12, 9);
+            labelIPDir.Name = "labelIPDir";
+            labelIPDir.Size = new System.Drawing.Size(0, 32);
+            labelIPDir.TabIndex = 4;
             // 
             // ServidorChatForm
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.InactiveCaptionText;
             ClientSize = new System.Drawing.Size(824, 513);
-            Controls.Add(btnConectar);
-            Controls.Add(ipTextBox);
+            Controls.Add(labelIPDir);
             Controls.Add(label1);
             Controls.Add(btnEnviarServidor);
             Controls.Add(mostrarTextBox);
             Controls.Add(entradaTextbox);
+            Location = new System.Drawing.Point(600, 100);
             Name = "ServidorChatForm";
             Text = "Servidor";
             Load += ServidorChatForm_load;
@@ -117,5 +113,6 @@ namespace Servidor
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox ipTextBox;
         private System.Windows.Forms.Button btnConectar;
+        private System.Windows.Forms.Label labelIPDir;
     }
 }
