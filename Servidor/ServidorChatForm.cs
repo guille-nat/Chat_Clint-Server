@@ -135,7 +135,16 @@ namespace Servidor
 
             try
             {
-                // Escuchar en todas las direcciones IP de la máquina
+                // Obtener la dirección IP local
+                string? ip = Dns.GetHostEntry(Dns.GetHostName()) //Devuelve el nombre del host de la máquina actual y lo utiliza para buscar la IP
+                              .AddressList //Devuelve un array de direcciones IP (IPAddress[]) asociadas con el nombre del host
+                              .FirstOrDefault(ip => ip.AddressFamily == AddressFamily.InterNetwork) //Obtiene el primer elemento de la lista de direcciones IP que cumpla con una condición
+                              ?.ToString();
+
+                if (ip == null)
+                {
+                    throw new Exception("No se pudo encontrar una dirección IP válida.");
+                }
                 oyente = new TcpListener(IPAddress.Any, 50000); 
                 oyente.Start();
                 string ip = $"Servidor escuchando en {IPAddress.Any.ToString()}:50000\r\n";
