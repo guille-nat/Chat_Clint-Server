@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
@@ -41,9 +42,10 @@ namespace Cliente
         private void btnConectar_Click(object sender, EventArgs e)
         {
             string ip = ipTextBox.Text; // obtener la IP del usuario.
-            if (string.IsNullOrWhiteSpace(ip))
+            if (string.IsNullOrWhiteSpace(ip) || !IPAddress.TryParse(ip, out _))
             {
                 MessageBox.Show("Por favor, ingrese una dirección IP válida.", "IP inválida", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return; // Detiene si la IP no es válida.
             }
 
             // Iniciar el cliente y se conceta al servidor.
@@ -64,11 +66,11 @@ namespace Cliente
         {
             if (mostrarTextBox.InvokeRequired)
             {
-                Invoke(new DisplayDelegate(MostrarMensaje), new object[] { mensaje });
+                Invoke(new Action<string>(MostrarMensaje), mensaje);
             }
             else
             {
-                mostrarTextBox.Text += mensaje;
+                mostrarTextBox.AppendText(mensaje + Environment.NewLine);
             }
         }
 
@@ -99,7 +101,7 @@ namespace Cliente
                 {
 
                     escritor.Write("CLIENTE>>> " + entradaTextBox.Text);
-                    mostrarTextBox.Text += "\r\nCLIENTE>>>" + entradaTextBox.Text;
+                    mostrarTextBox.AppendText("CLIENTE>>>" + entradaTextBox.Text + Environment.NewLine);
                     entradaTextBox.Clear();
                 }
             }
@@ -110,14 +112,13 @@ namespace Cliente
         }
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Debug.WriteLine("Entre: entradaTextBox_KeyDown CLIENTE");
             try
             {
                 if (entradaTextBox.ReadOnly == false)
                 {
 
                     escritor.Write("CLIENTE>>> " + entradaTextBox.Text);
-                    mostrarTextBox.Text += "\r\nCLIENTE>>>" + entradaTextBox.Text;
+                    mostrarTextBox.AppendText("CLIENTE>>>" + entradaTextBox.Text + Environment.NewLine);
                     entradaTextBox.Clear();
                 }
             }
