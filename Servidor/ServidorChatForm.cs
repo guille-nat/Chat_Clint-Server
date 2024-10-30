@@ -136,7 +136,7 @@ namespace Servidor
             try
             {
                 // Obtener la dirección IP local
-                string? ip = Dns.GetHostEntry(Dns.GetHostName()) //Devuelve el nombre del host de la máquina actual y lo utiliza para buscar la IP
+                string ip = Dns.GetHostEntry(Dns.GetHostName()) //Devuelve el nombre del host de la máquina actual y lo utiliza para buscar la IP
                               .AddressList //Devuelve un array de direcciones IP (IPAddress[]) asociadas con el nombre del host
                               .FirstOrDefault(ip => ip.AddressFamily == AddressFamily.InterNetwork) //Obtiene el primer elemento de la lista de direcciones IP que cumpla con una condición
                               ?.ToString();
@@ -147,8 +147,8 @@ namespace Servidor
                 }
                 oyente = new TcpListener(IPAddress.Any, 50000); 
                 oyente.Start();
-                string ip = $"Servidor escuchando en {IPAddress.Any.ToString()}:50000\r\n";
-                MostrarIPServidor(ip); // Actualiza el Label con la IP
+                string ip_coneted = $"Servidor escuchando en {IPAddress.Any.ToString()}:50000\r\n";
+                MostrarIPServidor(ip_coneted); // Actualiza el Label con la IP
                 while (true)
                 {
                     MostrarMensaje("Esperando una conexión\r\n");
