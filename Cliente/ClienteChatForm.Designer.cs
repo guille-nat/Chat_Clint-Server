@@ -106,7 +106,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = System.Drawing.SystemColors.Window;
-            label3.Location = new System.Drawing.Point(471, 68);
+            label3.Location = new System.Drawing.Point(472, 66);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(112, 15);
             label3.TabIndex = 7;
@@ -114,7 +114,7 @@
             // 
             // textNombreUsuario
             // 
-            textNombreUsuario.Location = new System.Drawing.Point(589, 65);
+            textNombreUsuario.Location = new System.Drawing.Point(589, 63);
             textNombreUsuario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             textNombreUsuario.Name = "textNombreUsuario";
             textNombreUsuario.Size = new System.Drawing.Size(110, 23);
