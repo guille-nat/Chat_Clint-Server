@@ -8,7 +8,7 @@
     "additionalProbingPaths": [
       "C:\\Users\\maria\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\maria\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "F:\\visual studio\\shared components\\NuGetPackages"
     ],
     "configProperties": {
       "Microsoft.NETCore.DotNetHostPolicy.SetAppPaths": true

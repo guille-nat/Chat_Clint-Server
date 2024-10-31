@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Cliente
-build_property.ProjectDir = C:\Users\maria\OneDrive\guille\Escritorio\redes_program\tp_redes_Clint-Server\Cliente\
+build_property.ProjectDir = C:\Users\maria\OneDrive\guille\Escritorio\redes_program\Nueva carpeta\Chat_Clint-Server\Cliente\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
