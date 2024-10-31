@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Servidor\\Servidor.csproj": {}
+    "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\Nueva carpeta\\Chat_Clint-Server\\Servidor\\Servidor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Servidor\\Servidor.csproj": {
+    "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\Nueva carpeta\\Chat_Clint-Server\\Servidor\\Servidor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Servidor\\Servidor.csproj",
+        "projectUniqueName": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\Nueva carpeta\\Chat_Clint-Server\\Servidor\\Servidor.csproj",
         "projectName": "Servidor",
-        "projectPath": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Servidor\\Servidor.csproj",
+        "projectPath": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\Nueva carpeta\\Chat_Clint-Server\\Servidor\\Servidor.csproj",
         "packagesPath": "C:\\Users\\maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\tp_redes_Clint-Server\\Servidor\\obj\\",
+        "outputPath": "C:\\Users\\maria\\OneDrive\\guille\\Escritorio\\redes_program\\Nueva carpeta\\Chat_Clint-Server\\Servidor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "F:\\visual studio\\shared components\\NuGetPackages"
         ],
         "configFilePaths": [
           "C:\\Users\\maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -60,24 +60,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.17, 5.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
